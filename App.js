@@ -5,7 +5,7 @@ import Todo from './Todo';
 function App() {
   const [todos, setTodos] = useState([])
   useEffect(() => {
-    fetch("http://localhost:8080/items")
+    fetch("https://heroic-gnome-10ce91.netlify.app/items")
       .then(response => response.json())
       .then(data => setTodos(data),console.log(todos))
       .catch(error => console.error(error))
