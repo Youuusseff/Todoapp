@@ -5,7 +5,7 @@ export default function TodoInput({todos, setTodos}) {
     const [todo, setTodo] = useState()
     function fetchingItem(item){
       const itemback = {task: item, completed: false}
-      fetch("http://localhost:8080/register",{method : 'POST',
+      fetch("https://heroic-gnome-10ce91.netlify.app/register",{method : 'POST',
       headers: {
         'content-type': 'application/json'
       },
