@@ -12,7 +12,7 @@ export default function TodoList({todos, setTodos}) {
   return (
     <div className='TodoList'>
         <ul>
-            {todos?.map( todo => (<li onClick={detailsItem()} key={todo.id}>{todo.task} <label><input id="checkbox" className="item" type='checkbox' value={todo.completed} onChange={()=>{todo.completed = !(todo.completed)}}></input><button id="task-button" className="item" onClick={()=>{deleteItem(todo);fetch("http://localhost:8080/delete/"+todo.id,{method : 'DELETE'})}} >Delete task</button></label></li>))}
+            {todos?.map( todo => (<li onClick={detailsItem()} key={todo.id}>{todo.task} <label><input id="checkbox" className="item" type='checkbox' value={todo.completed} onChange={()=>{todo.completed = !(todo.completed)}}></input><button id="task-button" className="item" onClick={()=>{deleteItem(todo);fetch("https://heroic-gnome-10ce91.netlify.app/delete/"+todo.id,{method : 'DELETE'})}} >Delete task</button></label></li>))}
         </ul>
     </div>
   )
