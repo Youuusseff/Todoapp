@@ -1,8 +1,0 @@
-spring:
-  data:
-    mongodb:
-        uri: mongodb+srv://root:root@todoapp.hryicv8.mongodb.net/?retryWrites=true&w=majority
-        database : todoapp
-        host: localhost
-        port: 27017
-
